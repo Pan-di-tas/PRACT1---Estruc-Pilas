@@ -1,5 +1,5 @@
 class PilaPrac:
-    def __init__(self, tamaño):
+    def __init__(self, tamaño_max):
         self.stack = [] 
         self.tamaño = tamaño_max 
         self.tope = 0 
