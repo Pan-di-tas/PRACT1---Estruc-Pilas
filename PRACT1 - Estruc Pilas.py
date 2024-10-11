@@ -1,36 +1,36 @@
 class PilaPrac:
     def __init__(self, tamaño_max):
-        self.stack = [] 
+        self.Pila = [] 
         self.tamaño = tamaño_max 
         self.tope = 0 
 
-    def esta_llena(self):
+    def Pila_Llena(self):
         if self.tope == self.tamaño:
             return True
         else:
             return False
 
-    def esta_vacia(self):
+    def Pila_Vacia(self):
         if self.tope == 0:
             return True
         else:
             return False
 
-    def insertar(self, elemento):
-        if self.esta_llena():
+    def Insertar(self, elemento):
+        if self.Pila_Llena():
             print(f"No se puede insertar {elemento}: Pila llena.")
         else:
-            self.stack.append(elemento) 
+            self.Pila.append(elemento) 
             self.tope += 1  
-            print(f"Insertado: {elemento}. Pila ahora: {self.stack}")
+            print(f"Insertado: {elemento}. Pila ahora: {self.Pila}")
 
-    def eliminar(self):
-        if self.esta_vacia():
+    def Eliminar(self):
+        if self.Pila_Vacia():
             print("No se puede eliminar: La pila ya está vacía.")
         else:
-            elemento = self.stack.pop()        
+            elemento = self.Pila.pop()        
             self.tope -= 1
-            print(f"Eliminado: {elemento}. Pila ahora: {self.stack}")
+            print(f"Eliminado: {elemento}. Pila ahora: {self.Pila}")
 
 pila = PilaPrac(8)
 
