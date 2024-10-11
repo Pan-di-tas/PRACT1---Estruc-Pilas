@@ -34,14 +34,12 @@ class PilaPrac:
 
 pila = PilaPrac(8)
 
-pila.insertar("X")  # Inserta X
-pila.insertar("Y")  # Inserta Y
-pila.eliminar()     # Elimina el último (Y)
-pila.eliminar()     # Elimina el último (X)
-pila.eliminar()     # Error, la pila está vacía (subdesbordamiento)
-pila.insertar("V")  # Inserta V
-pila.insertar("W")  # Inserta W
-pila.eliminar()     # Elimina el último (W)
-pila.insertar("R")  # Inserta R
-
-# Al final, la pila debe contener "V" y "R"
+pila.insertar("X") 
+pila.insertar("Y") 
+pila.eliminar()
+pila.eliminar()    
+pila.eliminar()  
+pila.insertar("V")  
+pila.insertar("W") 
+pila.eliminar()    
+pila.insertar("R") 
