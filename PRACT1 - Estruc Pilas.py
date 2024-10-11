@@ -1,18 +1,16 @@
-class Pila:
+class PilaPrac:
     def __init__(self, max_size):
-        self.stack = []  # Inicializamos la pila como una lista vacía
-        self.max_size = max_size  # Tamaño máximo de la pila
-        self.tope = 0  # Indicador de la posición del tope, comienza en 0
+        self.stack = [] 
+        self.max_size = max_size 
+        self.tope = 0 
 
     def esta_llena(self):
-        # Si el tope alcanza el tamaño máximo, la pila está llena
         if self.tope == self.max_size:
             return True
         else:
             return False
 
     def esta_vacia(self):
-        # Si el tope está en 0, la pila está vacía
         if self.tope == 0:
             return True
         else:
@@ -22,22 +20,20 @@ class Pila:
         if self.esta_llena():
             print(f"No se puede insertar {elemento}: Pila llena.")
         else:
-            self.stack.append(elemento)  # Agregamos el elemento a la pila
-            self.tope += 1  # Aumentamos el indicador del tope
+            self.stack.append(elemento) 
+            self.tope += 1  
             print(f"Insertado: {elemento}. Pila ahora: {self.stack}")
 
     def eliminar(self):
         if self.esta_vacia():
             print("No se puede eliminar: La pila ya está vacía.")
         else:
-            elemento = self.stack.pop()  # Eliminamos el último elemento
-            self.tope -= 1  # Disminuimos el indicador del tope
+            elemento = self.stack.pop()        
+            self.tope -= 1
             print(f"Eliminado: {elemento}. Pila ahora: {self.stack}")
 
-# Creamos una pila con una capacidad de 8 elementos
-pila = Pila(8)
+pila = PilaPrac(8)
 
-# Realizamos las operaciones que se piden en el problema
 pila.insertar("X")  # Inserta X
 pila.insertar("Y")  # Inserta Y
 pila.eliminar()     # Elimina el último (Y)
