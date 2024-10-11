@@ -1,11 +1,11 @@
 class PilaPrac:
-    def __init__(self, max_size):
+    def __init__(self, tamaño):
         self.stack = [] 
-        self.max_size = max_size 
+        self.tamaño = tamaño_max 
         self.tope = 0 
 
     def esta_llena(self):
-        if self.tope == self.max_size:
+        if self.tope == self.tamaño:
             return True
         else:
             return False
